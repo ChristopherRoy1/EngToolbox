@@ -12,6 +12,12 @@ class Equation {
 public:
 	Equation();
 	virtual ~Equation();
+private:
+	int numConstants;
+
+
 };
+
+
 
 #endif /* EQUATION_H_ */

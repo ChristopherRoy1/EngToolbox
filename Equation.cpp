@@ -7,8 +7,17 @@
 
 #include "Equation.h"
 
+#include <iostream>
+#include <string>
+
+
+int main(){
+	return 0;
+}
+
+
 Equation::Equation() {
-	// TODO Auto-generated constructor stub
+	numConstants = 0;
 
 }
 
