@@ -9,6 +9,7 @@
 #define TOPIC_H_
 
 #include <vector>
+#include <unordered_map>
 #include "Equation.h"
 using namespace std;
 
@@ -16,8 +17,14 @@ class Topic {
 public:
 	Topic();
 	virtual ~Topic();
+	void addEquation();
+	Equation removeEquation();
+
+
+
 private:
-	vector<Equation> equations;
+	unordered_map<Equation,Equation> equations;
+
 };
 
 #endif /* TOPIC_H_ */
