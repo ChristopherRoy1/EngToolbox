@@ -1,8 +1,8 @@
 /*
  * Topic.cpp
  *
- *  Created on: 2018-01-17
- *      Author: roysirch
+ *  Created on: Jan 19, 2018
+ *      Author: Elizabeth Roy
  */
 
 #include "Topic.h"

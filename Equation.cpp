@@ -1,23 +1,20 @@
 /*
  * Equation.cpp
  *
- *  Created on: 2018-01-13
- *      Author: roysirch
+ *  Created on: Jan 19, 2018
+ *      Author: Christopher Roy
  */
 
 #include "Equation.h"
 
-#include <iostream>
-#include <string>
-
-
 int main(){
+
 	return 0;
 }
 
 
 Equation::Equation() {
-	numConstants = 0;
+	// TODO Auto-generated constructor stub
 
 }
 

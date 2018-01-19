@@ -1,23 +1,25 @@
 /*
  * Equation.h
  *
- *  Created on: 2018-01-13
- *      Author: roysirch
+ *  Created on: Jan 19, 2018
+ *      Author: Christopher Roy
  */
 
 #ifndef EQUATION_H_
 #define EQUATION_H_
+
+#include <string>
+#include <vector>
+
+using namespace std;
 
 class Equation {
 public:
 	Equation();
 	virtual ~Equation();
 private:
-	int numConstants;
-
+	string c;
 
 };
-
-
 
 #endif /* EQUATION_H_ */
