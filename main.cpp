@@ -19,8 +19,9 @@ using namespace std;
  */
 int main(int argc, char** argv) {
     int a;
-   int error = printf("Hello, my name is chris:");
-    
+    printf("Hello.\n");
+    scanf("%d", &a);
+    printf("The number %d was entered", a);
     
 }
 
