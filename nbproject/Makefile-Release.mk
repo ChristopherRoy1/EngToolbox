@@ -38,6 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Catalogue.o \
 	${OBJECTDIR}/Equation.o \
 	${OBJECTDIR}/EquationLoader.o \
+	${OBJECTDIR}/ExpressionParser.o \
 	${OBJECTDIR}/main.o
 
 
@@ -79,6 +80,11 @@ ${OBJECTDIR}/EquationLoader.o: EquationLoader.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/EquationLoader.o EquationLoader.cpp
+
+${OBJECTDIR}/ExpressionParser.o: ExpressionParser.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ExpressionParser.o ExpressionParser.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
