@@ -18,7 +18,7 @@
 using namespace std;
 
 struct Value{
-    string label;
+    string letter;
     string unit;
     double value;    
 };

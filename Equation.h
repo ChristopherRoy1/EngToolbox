@@ -21,17 +21,23 @@ using namespace std;
 class Equation {
     
 public:
+    //Constructors
     Equation(string name, string returntype, vector<Value> constants, vector<Value> variables);
-  
     
+    //Functions
     string getName();
     string getReturnType();
     vector<Value> getConstants();    
     vector<Value> execute(vector<Value> input);
     
+    //Destructor
     virtual ~Equation();
     
-private:
+private:    
+    //Vectors
+    vector<Value> constants;
+    vector<Value> variables;
+    
     string returntype;
     string name;
     int numVars;
