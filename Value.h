@@ -5,20 +5,24 @@
  */
 
 /* 
- * File:   main.cpp
+ * File:   Value.h
  * Author: Christopher Roy
- *  
- */
-
-#include <cstdlib>
-#include <iostream>
-using namespace std;
-
-/*
+ *
  * 
  */
-int main(int argc, char** argv) {
-   
-    
-}
+
+#ifndef VALUE_H
+#define VALUE_H
+
+#include <string>
+using namespace std;
+
+struct Value{
+    string label;
+    string unit;
+    double value;    
+};
+
+
+#endif /* VALUE_H */
 

@@ -12,12 +12,30 @@
 #ifndef EQUATION_H
 #define EQUATION_H
 
+#include <string>
+#include <vector>
+#include <unordered_map>
+#include "Value.h"
+
+using namespace std;
 class Equation {
+    
 public:
-    Equation();
-    Equation(const Equation& orig);
+    Equation(string name, string returntype, vector<Value> constants, vector<Value> variables);
+  
+    
+    string getName();
+    string getReturnType();
+    vector<Value> getConstants();    
+    vector<Value> execute(vector<Value> input);
+    
     virtual ~Equation();
+    
 private:
+    string returntype;
+    string name;
+    int numVars;
+    int numConstants;
 
 };
 
