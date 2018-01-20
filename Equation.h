@@ -1,25 +1,25 @@
 /*
- * Equation.h
- *
- *  Created on: Jan 19, 2018
- *      Author: Christopher Roy
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 
-#ifndef EQUATION_H_
-#define EQUATION_H_
+/* 
+ * File:   Equation.h
+ * Author: Christopher Roy
+ */
 
-#include <string>
-#include <vector>
-
-using namespace std;
+#ifndef EQUATION_H
+#define EQUATION_H
 
 class Equation {
 public:
-	Equation();
-	virtual ~Equation();
+    Equation();
+    Equation(const Equation& orig);
+    virtual ~Equation();
 private:
-	string c;
 
 };
 
-#endif /* EQUATION_H_ */
+#endif /* EQUATION_H */
+

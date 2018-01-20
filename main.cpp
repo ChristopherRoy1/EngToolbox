@@ -5,9 +5,20 @@
  */
 
 /* 
- * File:   Catalogue.cpp
+ * File:   main.cpp
  * Author: Christopher Roy
  *  
  */
 
-#include "Catalogue.h"
+#include <cstdlib>
+
+using namespace std;
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+
+    return 0;
+}
+
