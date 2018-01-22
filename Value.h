@@ -24,11 +24,15 @@ public:
     Value();
     Value(const Value& orig);
     virtual ~Value();
-    Value add(Value v1, Value v2);
+     
+    Value operator+(const Value& other);
+    Value operator-(const Value& other);
+    Value operator*(const Value& other);
+    Value operator/(const Value& other);
 private:
-    string name;
-    int numFunctions;
-    
+    string letter;
+    string unit;
+    double value;       
 };        
         
 

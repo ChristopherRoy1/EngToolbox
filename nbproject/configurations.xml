@@ -6,8 +6,6 @@
                    projectFiles="true">
       <itemPath>Catalogue.h</itemPath>
       <itemPath>Equation.h</itemPath>
-      <itemPath>EquationLoader.h</itemPath>
-      <itemPath>ExpressionParser.h</itemPath>
       <itemPath>Stress.h</itemPath>
       <itemPath>Subject.h</itemPath>
       <itemPath>Value.h</itemPath>
@@ -56,10 +54,6 @@
       </item>
       <item path="Equation.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="EquationLoader.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ExpressionParser.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="Stress.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Stress.h" ex="false" tool="3" flavor2="0">
@@ -102,10 +96,6 @@
       <item path="Equation.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Equation.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="EquationLoader.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ExpressionParser.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Stress.cpp" ex="false" tool="1" flavor2="0">
       </item>
