@@ -17,11 +17,20 @@
 #include <string>
 using namespace std;
 
-struct Value{
-    string letter;
-    string unit;
-    double value;    
-};
+
+
+class Value {
+public:
+    Value();
+    Value(const Value& orig);
+    virtual ~Value();
+    Value add(Value v1, Value v2);
+private:
+    string name;
+    int numFunctions;
+    
+};        
+        
 
 
 #endif /* VALUE_H */

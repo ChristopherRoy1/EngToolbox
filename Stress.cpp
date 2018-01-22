@@ -20,7 +20,14 @@ Stress::Stress() {
 Stress::Stress(const Stress& orig) {
 }
 
-Value
+Value normalAxialStress(Value force, value area){
+    
+    
+}
+
+
+
+
 
 
 Stress::~Stress() {
