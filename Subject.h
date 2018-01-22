@@ -15,13 +15,14 @@
 #define SUBJECT_H
 
 #include <string>
+
 class Subject {
 public:
     Subject();
     Subject(const Subject& orig);
     virtual ~Subject();
 private:
-    string name;
+    //string name;
     int numFunctions;
     
 };

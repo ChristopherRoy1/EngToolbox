@@ -21,8 +21,6 @@
                    projectFiles="true">
       <itemPath>Catalogue.cpp</itemPath>
       <itemPath>Equation.cpp</itemPath>
-      <itemPath>EquationLoader.cpp</itemPath>
-      <itemPath>ExpressionParser.cpp</itemPath>
       <itemPath>Stress.cpp</itemPath>
       <itemPath>Subject.cpp</itemPath>
       <itemPath>Value.cpp</itemPath>
@@ -58,11 +56,7 @@
       </item>
       <item path="Equation.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="EquationLoader.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="EquationLoader.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ExpressionParser.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ExpressionParser.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -109,11 +103,7 @@
       </item>
       <item path="Equation.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="EquationLoader.cpp" ex="false" tool="1" flavor2="0">
-      </item>
       <item path="EquationLoader.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="ExpressionParser.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ExpressionParser.h" ex="false" tool="3" flavor2="0">
       </item>

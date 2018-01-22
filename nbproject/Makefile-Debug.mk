@@ -37,8 +37,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Catalogue.o \
 	${OBJECTDIR}/Equation.o \
-	${OBJECTDIR}/EquationLoader.o \
-	${OBJECTDIR}/ExpressionParser.o \
 	${OBJECTDIR}/Stress.o \
 	${OBJECTDIR}/Subject.o \
 	${OBJECTDIR}/Value.o \
@@ -78,16 +76,6 @@ ${OBJECTDIR}/Equation.o: Equation.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Equation.o Equation.cpp
-
-${OBJECTDIR}/EquationLoader.o: EquationLoader.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/EquationLoader.o EquationLoader.cpp
-
-${OBJECTDIR}/ExpressionParser.o: ExpressionParser.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ExpressionParser.o ExpressionParser.cpp
 
 ${OBJECTDIR}/Stress.o: Stress.cpp
 	${MKDIR} -p ${OBJECTDIR}
