@@ -8,6 +8,8 @@
       <itemPath>Equation.h</itemPath>
       <itemPath>EquationLoader.h</itemPath>
       <itemPath>ExpressionParser.h</itemPath>
+      <itemPath>Stress.h</itemPath>
+      <itemPath>Subject.h</itemPath>
       <itemPath>Value.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -21,6 +23,8 @@
       <itemPath>Equation.cpp</itemPath>
       <itemPath>EquationLoader.cpp</itemPath>
       <itemPath>ExpressionParser.cpp</itemPath>
+      <itemPath>Stress.cpp</itemPath>
+      <itemPath>Subject.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -60,6 +64,14 @@
       <item path="ExpressionParser.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ExpressionParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Stress.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Stress.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Subject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Subject.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Value.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -101,6 +113,14 @@
       <item path="ExpressionParser.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ExpressionParser.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Stress.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Stress.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Subject.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Subject.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Value.h" ex="false" tool="3" flavor2="0">
       </item>

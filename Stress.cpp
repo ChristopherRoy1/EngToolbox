@@ -5,20 +5,24 @@
  */
 
 /* 
- * File:   EquationLoader.cpp
+ * File:   Stress.cpp
  * Author: Christopher Roy
  * 
- * Created on January 20, 2018, 4:49 PM
+ * Created on January 21, 2018, 8:23 PM
  */
 
-#include "EquationLoader.h"
+#include "Stress.h"
+#include "Value.h"
 
-EquationLoader::EquationLoader() {
+Stress::Stress() {
 }
 
-EquationLoader::EquationLoader(const EquationLoader& orig) {
+Stress::Stress(const Stress& orig) {
 }
 
-EquationLoader::~EquationLoader() {
+Value
+
+
+Stress::~Stress() {
 }
 

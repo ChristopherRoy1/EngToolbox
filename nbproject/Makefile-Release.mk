@@ -39,6 +39,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/Equation.o \
 	${OBJECTDIR}/EquationLoader.o \
 	${OBJECTDIR}/ExpressionParser.o \
+	${OBJECTDIR}/Stress.o \
+	${OBJECTDIR}/Subject.o \
 	${OBJECTDIR}/main.o
 
 
@@ -85,6 +87,16 @@ ${OBJECTDIR}/ExpressionParser.o: ExpressionParser.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ExpressionParser.o ExpressionParser.cpp
+
+${OBJECTDIR}/Stress.o: Stress.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Stress.o Stress.cpp
+
+${OBJECTDIR}/Subject.o: Subject.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Subject.o Subject.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
