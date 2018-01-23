@@ -39,7 +39,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/Equation.o \
 	${OBJECTDIR}/Stress.o \
 	${OBJECTDIR}/Subject.o \
-	${OBJECTDIR}/Value.o \
 	${OBJECTDIR}/main.o
 
 
@@ -86,11 +85,6 @@ ${OBJECTDIR}/Subject.o: Subject.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -I/C/Users/Elizabeth\ Roy/Documents/Boost\ Libraries/boost_1_66_0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Subject.o Subject.cpp
-
-${OBJECTDIR}/Value.o: Value.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -I/C/Users/Elizabeth\ Roy/Documents/Boost\ Libraries/boost_1_66_0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Value.o Value.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}

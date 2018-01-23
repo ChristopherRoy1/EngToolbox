@@ -15,29 +15,25 @@
 #include <string>
 #include <vector>
 #include <unordered_map>
-#include "Value.h"
+
 
 using namespace std;
 class Equation {
     
 public:
     //Constructors
-    Equation(string name, string returntype, vector<Value> constants, vector<Value> variables);
+    Equation(string name, string returntype);
     
     //Functions
     string getName();
     string getReturnType();
-    vector<Value> getConstants();    
-    vector<Value> execute(vector<Value> input);
+    
     
     //Destructor
     virtual ~Equation();
     
 private:    
     //Vectors
-    vector<Value> constants;
-    vector<Value> variables;
-    
     string returntype;
     string name;
     int numVars;

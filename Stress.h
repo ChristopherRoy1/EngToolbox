@@ -6,7 +6,7 @@
 
 /* 
  * File:   Stress.h
- * Author: Elizabeth Roy
+ * Author: Christopher Roy
  *
  * Created on January 21, 2018, 8:23 PM
  */

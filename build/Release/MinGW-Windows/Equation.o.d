@@ -1,5 +1,3 @@
-build/Release/MinGW-Windows/Equation.o: Equation.cpp Equation.h Value.h
+build/Release/MinGW-Windows/Equation.o: Equation.cpp Equation.h
 
 Equation.h:
-
-Value.h:
