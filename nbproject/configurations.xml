@@ -6,6 +6,7 @@
                    projectFiles="true">
       <itemPath>Catalogue.h</itemPath>
       <itemPath>Equation.h</itemPath>
+      <itemPath>Fluids.h</itemPath>
       <itemPath>Stress.h</itemPath>
       <itemPath>Subject.h</itemPath>
     </logicalFolder>
@@ -18,6 +19,7 @@
                    projectFiles="true">
       <itemPath>Catalogue.cpp</itemPath>
       <itemPath>Equation.cpp</itemPath>
+      <itemPath>Fluids.cpp</itemPath>
       <itemPath>Stress.cpp</itemPath>
       <itemPath>Subject.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
@@ -51,6 +53,10 @@
       <item path="Equation.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Equation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Fluids.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Fluids.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Stress.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -98,6 +104,10 @@
       <item path="Equation.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Equation.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Fluids.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Fluids.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Stress.cpp" ex="false" tool="1" flavor2="0">
       </item>

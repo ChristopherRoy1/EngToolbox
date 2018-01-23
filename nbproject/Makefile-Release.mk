@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Catalogue.o \
 	${OBJECTDIR}/Equation.o \
+	${OBJECTDIR}/Fluids.o \
 	${OBJECTDIR}/Stress.o \
 	${OBJECTDIR}/Subject.o \
 	${OBJECTDIR}/main.o
@@ -75,6 +76,11 @@ ${OBJECTDIR}/Equation.o: Equation.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -I/C/Users/Elizabeth\ Roy/Documents/Boost\ Libraries/boost_1_66_0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Equation.o Equation.cpp
+
+${OBJECTDIR}/Fluids.o: Fluids.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -I/C/Users/Elizabeth\ Roy/Documents/Boost\ Libraries/boost_1_66_0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fluids.o Fluids.cpp
 
 ${OBJECTDIR}/Stress.o: Stress.cpp
 	${MKDIR} -p ${OBJECTDIR}

@@ -14,11 +14,21 @@
 #ifndef STRESS_H
 #define STRESS_H
 
+#include <boost/units/systems/si.hpp>
+
+#include <boost/units/quantity.hpp>
+#include <boost/units/physical_dimensions/stress.hpp>
+#include <boost/units/physical_dimensions/moment_of_inertia.hpp>
+
+
+
 class Stress {
 public:
     Stress();
     Stress(const Stress& orig);
     virtual ~Stress();
+        
+       
 private:
 
 };
