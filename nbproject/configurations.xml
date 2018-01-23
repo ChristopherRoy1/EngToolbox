@@ -81,6 +81,9 @@
         </cTool>
         <ccTool>
           <developmentMode>5</developmentMode>
+          <incDir>
+            <pElem>C:\Users\Elizabeth Roy\Documents\Boost Libraries\boost_1_66_0</pElem>
+          </incDir>
         </ccTool>
         <fortranCompilerTool>
           <developmentMode>5</developmentMode>
@@ -88,6 +91,11 @@
         <asmTool>
           <developmentMode>5</developmentMode>
         </asmTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>"C:\Users\Desktop\Git Repos\EngToolBox\Libraries"</pElem>
+          </linkerAddLib>
+        </linkerTool>
       </compileType>
       <item path="Catalogue.cpp" ex="false" tool="1" flavor2="0">
       </item>

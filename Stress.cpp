@@ -14,21 +14,58 @@
 #include "Stress.h"
 #include "Value.h"
 
+
+
+#include <boost/units/io.hpp>
+#include <boost/units/systems/si.hpp>
+#include <boost/units/systems/si/io.hpp>
+
+
+
+#include <boost/units/quantity.hpp>
+#include <boost/units/physical_dimensions/stress.hpp>
+#include <boost/units/physical_dimensions/moment_of_inertia.hpp>
+
+
+#include <boost/units/systems/si.hpp>
+
+using namespace boost::units;
+
 Stress::Stress() {
 }
 
 Stress::Stress(const Stress& orig) {
 }
 
-Value normalAxialStress(Value force, Value area){
-    Value stress = force/ area;    
-    return stress;    
+template<class System,class Y>
+quantity<unit<stress_dimension,System>,Y> 
+normalForce(quantity<unit<force_dimension,System>,Y> normalForce,
+     quantity<unit<area_dimension,System>,Y> area)
+{
+    return normalForce/area;
 }
 
-Value longitudinalBendingStress(Value bendingMoment, Value distanceFromNeutralAxis, Value momInertia){
-    Value stress = (bendingMoment*distanceFromNeutralAxis)/momInertia;
-    return stress;
+template<class System,class Y>
+quantity<unit<stress_dimension,System>,Y> 
+longitudinalBendingStress(quantity<unit<energy_dimension,System>,Y> M,
+     quantity<unit<length_dimension,System>,Y> c, quantity<unit<moment_of_inertia_dimension, System>, Y> I)
+{
+    //  M = bending moment at cross section
+    //  c = distance from neutral axis
+    //  I = moment of inertia 
+    return (M*c)/I;
 }
+
+
+template<class System,class Y>
+quantity<unit<stress_dimension,System>,Y> 
+torsionalShearStress(quantity<unit<energy_dimension,System>,Y> M,
+     quantity<unit<length_dimension,System>,Y> c, quantity<unit<moment_of_inertia_dimension, System>, Y> I)
+{
+    
+}
+
+
 
 Value torsionalShearStress(Value twistingMoment, Value distanceFromCenter, Value polarMomInertia){
     Value stress = (twistingMoment*distanceFromCenter)/polarMomInertia;

@@ -57,7 +57,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=
+LDLIBSOPTIONS=-L\"C\:\Users\Desktop\Git\ Repos\EngToolBox\Libraries\"
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
@@ -70,32 +70,32 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/engtoolbox.exe: ${OBJECTFILES}
 ${OBJECTDIR}/Catalogue.o: Catalogue.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Catalogue.o Catalogue.cpp
+	$(COMPILE.cc) -O2 -I/C/Users/Elizabeth\ Roy/Documents/Boost\ Libraries/boost_1_66_0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Catalogue.o Catalogue.cpp
 
 ${OBJECTDIR}/Equation.o: Equation.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Equation.o Equation.cpp
+	$(COMPILE.cc) -O2 -I/C/Users/Elizabeth\ Roy/Documents/Boost\ Libraries/boost_1_66_0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Equation.o Equation.cpp
 
 ${OBJECTDIR}/Stress.o: Stress.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Stress.o Stress.cpp
+	$(COMPILE.cc) -O2 -I/C/Users/Elizabeth\ Roy/Documents/Boost\ Libraries/boost_1_66_0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Stress.o Stress.cpp
 
 ${OBJECTDIR}/Subject.o: Subject.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Subject.o Subject.cpp
+	$(COMPILE.cc) -O2 -I/C/Users/Elizabeth\ Roy/Documents/Boost\ Libraries/boost_1_66_0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Subject.o Subject.cpp
 
 ${OBJECTDIR}/Value.o: Value.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Value.o Value.cpp
+	$(COMPILE.cc) -O2 -I/C/Users/Elizabeth\ Roy/Documents/Boost\ Libraries/boost_1_66_0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Value.o Value.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -O2 -I/C/Users/Elizabeth\ Roy/Documents/Boost\ Libraries/boost_1_66_0 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:
