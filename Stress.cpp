@@ -21,10 +21,24 @@ Stress::Stress(const Stress& orig) {
 }
 
 Value normalAxialStress(Value force, Value area){
-    
-    
+    Value stress = force/ area;    
+    return stress;    
 }
 
+Value longitudinalBendingStress(Value bendingMoment, Value distanceFromNeutralAxis, Value momInertia){
+    Value stress = (bendingMoment*distanceFromNeutralAxis)/momInertia;
+    return stress;
+}
+
+Value torsionalShearStress(Value twistingMoment, Value distanceFromCenter, Value polarMomInertia){
+    Value stress = (twistingMoment*distanceFromCenter)/polarMomInertia;
+    return stress;
+}
+
+Value pureShearStress(Value firstMoment, Value shearForce, Value momOfInertia, Value widthOfBeam){
+    Value stress = (firstMoment * shearForce)/(momOfInertia * widthOfBeam);
+    return stress;
+}
 
 
 
